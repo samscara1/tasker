@@ -1,0 +1,29 @@
+.new-task {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    text-decoration: none;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+letter-spacing: -0.434118px;
+
+color: #006CFF;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.new-task-input {
+    padding: 15px;
+    height: 640px;
+    outline: none;
+    border: none;
+    resize: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
