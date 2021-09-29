@@ -5,12 +5,14 @@
 
 .btn {
     text-decoration: none;
-font-size: 18px;
-line-height: 21px;
-/* identical to box height */
-letter-spacing: -0.434118px;
-
-color: #006CFF;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: -0.434118px;
+    color: #006CFF;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-container {
