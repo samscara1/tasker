@@ -30,7 +30,6 @@ console.log(tasks)
 
   return (
     <Router>
-        <div className="App">
           <Route exact path="/">
             <Home tasks={tasks} />
           </Route>
@@ -41,7 +40,6 @@ console.log(tasks)
               alert={alert}
              />
           </Route>
-        </div>
     </Router>
   );
 }
