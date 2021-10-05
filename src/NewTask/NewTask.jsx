@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import {Alert} from '../Alert/Alert'
 import './NewTask.css'
 
-export const NewTask = ({addNewTask, alert, showAlertMsg}) => {
+export const NewTask = ({addNewTask, alert}) => {
     const [text, setText] = useState('')
     const history = useHistory()
 
