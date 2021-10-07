@@ -3,6 +3,6 @@ import './TaskLists.css'
 
  export const TaskLists = () => {
      return <section className="lists">
-         Lists
+         <h2>Lists</h2>
      </section>
  }

@@ -1,14 +1,12 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MenuBtn } from "./MenuBtn";
-// import { Router } from 'react-router-dom'
-// import { createMemoryHistory } from 'history'  
 
 describe('MenuBtn component', ()=> {
-    test('button renders', ()=> {
+    test('button should render at first render', ()=> {
         render(
             <MenuBtn/>
         );
-        expect(screen.getByRole('button'))
+        expect(screen.getByRole('button')).toBeInTheDocument()
     })
 })

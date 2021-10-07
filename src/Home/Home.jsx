@@ -3,7 +3,6 @@ import { MenuBtn } from '../MenuBtn/MenuBtn'
 import { TaskLists } from '../TaskLists/TaskLists'
 import { TaskOrList } from '../TaskOrList/TaskOrList'
 import { Today } from '../Today/Today'
-import { Heading } from '../heading/Heading'
 import './Home.css'
 
 export const Home = ({tasks}) => {

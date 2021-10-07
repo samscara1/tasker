@@ -7,7 +7,7 @@ import { NewTask } from './NewTask/NewTask.jsx'
 
 function App() {
 const [tasks, setTasks] = useState([])
-const [alert, setAlert] = useState(false)
+// const [alert, setAlert] = useState(false)
 const [position, setPosition] = useState(0)
 
 
@@ -19,12 +19,12 @@ const addNewTask = (task) => {
   setTasks([...tasks, newTask])
 }
 
-const showAlertMsg = () => {
-  setAlert(true)
-  const timer = setTimeout(() => {
-    setAlert(false)
-  }, 3000);
-}
+// const showAlertMsg = () => {
+//   setAlert(true)
+//   const timer = setTimeout(() => {
+//     setAlert(false)
+//   }, 3000);
+// }
 
 console.log(tasks)
 
@@ -36,8 +36,8 @@ console.log(tasks)
           <Route path="/newtask">
             <NewTask 
               addNewTask={addNewTask} 
-              showAlertMsg={showAlertMsg} 
-              alert={alert}
+              // showAlertMsg={showAlertMsg} 
+              // alert={alert}
              />
           </Route>
     </Router>

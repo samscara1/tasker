@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import {Alert} from '../Alert/Alert'
 import './NewTask.css'
 
-export const NewTask = ({addNewTask, alert}) => {
+export const NewTask = ({addNewTask}) => {
     const [text, setText] = useState('')
     const history = useHistory()
 
@@ -17,7 +16,6 @@ export const NewTask = ({addNewTask, alert}) => {
             backToHome()
         } else {
             backToHome()
-
         }
     }
 
@@ -27,7 +25,6 @@ export const NewTask = ({addNewTask, alert}) => {
 
     return (
     <section className="new-task">
-        {alert && <Alert text="enter a task"/>}
         <div className="btn-container">
             <button type="button" className="btn back-btn" onClick={backToHome} >Cancel</button>
             <button type="button" className="btn back-btn" onClick={addTask} >Done</button>
