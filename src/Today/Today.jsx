@@ -10,7 +10,7 @@ export const Today = ({tasks}) => {
             {tasks.map(task => {
                 const {id, title} = task
                 return (
-                    <TodayItem id={id} title={title} />
+                    <TodayItem key={id} id={id} title={title} />
                 )
             })}
         </ul>}
